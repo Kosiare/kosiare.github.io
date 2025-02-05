@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on devops // infra plumber // someday coder</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on devops // infra plumber // someday coder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 02 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tytuldddd</title>
+      <link>//localhost:1313/posts/blog-copy/</link>
+      <pubDate>Sun, 02 Feb 2025 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/blog-copy/</guid>
+      <description>&lt;h2 id=&#34;test&#34;&gt;Test&lt;/h2&gt;
+&lt;h1 id=&#34;xddddads&#34;&gt;xddddads&lt;/h1&gt;</description>
+      <content>&lt;h2 id=&#34;test&#34;&gt;Test&lt;/h2&gt;
+&lt;h1 id=&#34;xddddads&#34;&gt;xddddads&lt;/h1&gt;
+</content>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>//localhost:1313/posts/blog/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>//localhost:1313/posts/blog/</guid>
+      <description>&lt;h2 id=&#34;test&#34;&gt;Test&lt;/h2&gt;
+&lt;h1 id=&#34;xdddd&#34;&gt;xdddd&lt;/h1&gt;
+&lt;h2 id=&#34;xdddd-1&#34;&gt;xdddd&lt;/h2&gt;
+&lt;h3 id=&#34;xasdassad&#34;&gt;xasdassad&lt;/h3&gt;
+&lt;p&gt;as
+d
+asd
+asd
+asd&lt;/p&gt;
+&lt;p&gt;asd
+asd
+asd
+sad
+sad
+asd
+asdsad
+sad
+sad
+asda
+sd
+asd
+asddsadasd
+asd
+asdasdasdas
+das
+dasd
+as
+dasd&lt;/p&gt;
+&lt;p&gt;asd
+sa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadassa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+dsa
+dsasa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadassa
+dsasa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+dsa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+dsa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+d&lt;/p&gt;
+&lt;p&gt;sa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+sa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+sa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;test&#34;&gt;Test&lt;/h2&gt;
+&lt;h1 id=&#34;xdddd&#34;&gt;xdddd&lt;/h1&gt;
+&lt;h2 id=&#34;xdddd-1&#34;&gt;xdddd&lt;/h2&gt;
+&lt;h3 id=&#34;xasdassad&#34;&gt;xasdassad&lt;/h3&gt;
+&lt;p&gt;as
+d
+asd
+asd
+asd&lt;/p&gt;
+&lt;p&gt;asd
+asd
+asd
+sad
+sad
+asd
+asdsad
+sad
+sad
+asda
+sd
+asd
+asddsadasd
+asd
+asdasdasdas
+das
+dasd
+as
+dasd&lt;/p&gt;
+&lt;p&gt;asd
+sa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadassa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+dsa
+dsasa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadassa
+dsasa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+dsa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+dsa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+d&lt;/p&gt;
+&lt;p&gt;sa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+sa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d
+sa
+dsa
+dsadsadsadsadasdas
+dasdsadasd
+asdsadsadas
+d&lt;/p&gt;
+&lt;p&gt;sa
+dsa
+dsadsadsadsadasdasdsadsadsadsadsadasdasdsadsadsadsadasdas
+dasdsadasddsadsadsadsadasdasdsadsadsadsadsadsadsadsadasdas
+dasdsadasd
+asdsadsadasasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdas
+dasdsadasddsadsadsadsadasdasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasasdsadsada
+sdsadsadsadsadasdas
+dasdsadasd
+asdsadsadasdsadsadsadsadasdas
+dasdsadasdasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsad
+sadasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdas
+asdsadsadas
+asdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdas
+dasdsadasdasdsadasdasdasd
+asdsadsadasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdas
+asdsadsadasasdsadsadasdsadsadsadsadasdas
+dasdsadasdasdsadsadasdsadsadsadsadasdas
+asdsadsadasasdsadsadasdsadsadsadsadasdasadasdsadsadsadsadasdas
+dasdsadasdasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdas
+asdsadsadasdsadsadsadsaddsadsadsadsadasdasasdsadsadasdsadsadsadsadasdas
+dasdsadasdasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasdsadsadasdsadsadsadsadasdas
+asdsadsadas
+dasdsadasddsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasas
+dsadsadasdsadsadsadsadasdas
+dasdsadasdasdsadsadasdsadsadsadsadasdas
+asdsadsadas
+asdsadsadasdsadsadsadasdasdsadsadsadsadasdas
+dasdsadasdasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdas
+asdsadsadasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdas
+dasdsadasdasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdas
+asdsadsadas
+dasdsadasd
+asdsadsadas
+dasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdasasdsadsadasdsadsadsadsadasdas&lt;/p&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>
