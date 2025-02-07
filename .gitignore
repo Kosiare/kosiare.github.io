@@ -27,3 +27,6 @@ go.work.sum
 
 # degenerate IDEs
 .idea/
+
+# public (for now)
+public/
