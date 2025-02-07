@@ -19,6 +19,16 @@ html {
   padding: 0;
 }
 
+.post {
+  padding: 2rem;
+  border-radius: var(--radius);
+  border: 1px solid color-mix(in srgb, var(--foreground) 25%, transparent);
+  background: color-mix(in srgb, var(--foreground) 3%, transparent) !important;
+  color: color-mix(in srgb, var(--foreground) 3%, var(--accent));
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
 body {
   margin: 0;
   padding: 0;
