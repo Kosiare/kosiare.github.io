@@ -26,7 +26,7 @@ title = "whoami"
 
 <script>
 let updateElapsedTime = () => {
-    const birthDate = new Date("1997-02-13T00:00:00.000Z");
+    const birthDate = new Date("1997-02-13T09:30:00.000Z");
 
     let getElapsedTime = () => {
         const now = new Date();
@@ -49,7 +49,7 @@ let updateElapsedTime = () => {
         }
         months < 0 ? months += 12 : years--;
 
-        return `${years} years, ${months} months, ${days} days, ${hours}:${minutes}:${seconds}`
+        return `${years-1} years, ${months} months, ${days} days, ${hours}:${minutes}:${seconds}`
     };
 
     let update = () => {
