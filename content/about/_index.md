@@ -41,7 +41,7 @@ let updateElapsedTime = () => {
         seconds < 0 ? seconds += 60 : minutes --;
         seconds >= 0 && seconds < 10 ? seconds = "0" + seconds : seconds;
         minutes < 0 ? minutes += 60 : hours --;
-        hours < 0 ? hours += 60 : days --;
+        hours < 0 ? hours += 24 : days --;
         if (days < 0) {
             const lastMonth = new Date(now.getFullYear(), now.getMonth(), 0);
             days += lastMonth.getDate();
