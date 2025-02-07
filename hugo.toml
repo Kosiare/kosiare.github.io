@@ -115,3 +115,9 @@ theme = "terminal-remix"
           name = "contact"
           url = "/contact"
           weight = 50
+
+# this unsanitizes the html code within markdown files
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # yolo

@@ -12,9 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/projects/blog/</guid>
-      <description>&lt;h2 id=&#34;test&#34;&gt;Test&lt;/h2&gt;
-&lt;p&gt;xddddd
-ddd&lt;/p&gt;</description>
+      <description>Test xddddd ddd</description>
       <content>&lt;h2 id=&#34;test&#34;&gt;Test&lt;/h2&gt;
 &lt;p&gt;xddddd
 ddd&lt;/p&gt;
@@ -27,9 +25,7 @@ ddd&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>//localhost:1313/projects/blog2/</guid>
-      <description>&lt;h2 id=&#34;test&#34;&gt;Test&lt;/h2&gt;
-&lt;p&gt;xddddd
-ddddsddsdd&lt;/p&gt;</description>
+      <description>Test xddddd ddddsddsdd</description>
       <content>&lt;h2 id=&#34;test&#34;&gt;Test&lt;/h2&gt;
 &lt;p&gt;xddddd
 ddddsddsdd&lt;/p&gt;
