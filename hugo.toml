@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-pagination.pagerSize = 5
+pagination.pagerSize = 3 #! tmp to test pages
 theme = "terminal-remix"
 
 [params]
