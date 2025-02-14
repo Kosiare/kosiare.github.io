@@ -123,9 +123,7 @@ updateElapsedTime();
 </script>
 <script>
     function isMobileDevice() {
-        let device = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-        console.log(device);
-        return device;
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     }
 
     let staticTerminal = document.getElementById("static-terminal");
@@ -137,7 +135,4 @@ updateElapsedTime();
         staticTerminal.classList.add("show-content");
         staticTerminal.classList.remove("hide-content");
     }
-
-    console.log(staticTerminal);
-
 </script>
