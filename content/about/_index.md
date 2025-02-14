@@ -2,8 +2,18 @@
 title = "whoami"
 +++
 
+<style>
+    .hide-content {
+        display: none;    
+    }
 
-<div class="termynal" data-ty-startDelay="100" data-termynal>
+    .show-content {
+        display: block;
+    }
+</style>
+
+
+<div id="animated-terminal" class="termynal show-content" data-ty-startDelay="100" data-termynal>
     <span data-ty="input" data-ty-prompt="~/piotr >"> whoami</span>
     <span data-ty data-ty-delay="50">Fetching data...</span>
     <span data-ty="progress"></span>
@@ -32,7 +42,7 @@ title = "whoami"
 
 
 
-<pre class="neofetch">
+<pre id="static-terminal" class="neofetch hide-content">
 > neofetch
 
 
@@ -110,4 +120,24 @@ let updateElapsedTime = () => {
 };
 
 updateElapsedTime();
+</script>
+<script>
+    function isMobileDevice() {
+        let device = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        console.log(device);
+        return device;
+    }
+
+    let staticTerminal = document.getElementById("static-terminal");
+    let animatedTerminal = document.getElementById("animated-terminal");
+
+    if (isMobileDevice()) {
+        animatedTerminal.classList.remove("show-content");
+        animatedTerminal.classList.add("hide-content");
+        staticTerminal.classList.add("show-content");
+        staticTerminal.classList.remove("hide-content");
+    }
+
+    console.log(staticTerminal);
+
 </script>
