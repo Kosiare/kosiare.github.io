@@ -3,3 +3,15 @@
 .neofetch {
   line-height: 120%;
 }
+
+div .termynal {
+  overflow: scroll;
+  width: 100%;  /* ensure that it fills the container */
+}
+
+.termynal span {
+  color: var(--accent);
+  font-size: 1rem;
+  white-space: pre;
+  line-height: 120%;
+}
