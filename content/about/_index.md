@@ -12,39 +12,37 @@ title = "whoami"
     }
 </style>
 
-
-<div id="animated-terminal" class="termynal show-content" data-ty-startDelay="100" data-termynal>
-    <span data-ty="input" data-ty-prompt="~/piotr >"> whoami</span>
-    <span data-ty data-ty-delay="50">Fetching data...</span>
-    <span data-ty="progress"></span>
-    <span data-ty>##############+-++++########################</span>
-    <span data-ty>###########---.--+-. ...####################</span>
-    <span data-ty>##########-.-----...    .-##################    piotr@kusinski.dev</span>
-    <span data-ty>#########-...-..-----+++ ..#################    -------------------------------</span>
-    <span data-ty>#########..-.-------####+. -################    OS: Arch btw</span>
-    <span data-ty>#########. ---+++#######+. -################    Host: Kubernetes Cluster</span>
-    <span data-ty>######### -+  .###+. -+##- .################    Kernel: Hardened (until I forget an update)</span>
-    <span data-ty>######### -+-.. +#-..-+##+ -################    Uptime: <span id="sinceBirth"></span></span>
-    <span data-ty>######### ++--+-###+++###+ +################    Packages: ∞ (pods)</span>
-    <span data-ty>########+.++##++#########++#-###############    Shell: bash/zsh</span>
-    <span data-ty>#########.-+++- .+##########################    SLA: 99.99999% (occasional naps)</span>
-    <span data-ty>#########+-+++-.--#######++#################    Status: Permanently online</span>
-    <span data-ty>##########+--+++++######+     +#############    On-Call Status: PagerDuty PTSD enabled</span>
-    <span data-ty>###########+++########+-#        .##########    Logs: Filtered 10 million lines, still no clue</span>
-    <span data-ty>######### .  +....-.. -##         ##########    Monitoring: Prometheus, Grafana & occasional panic</span>
-    <span data-ty>#######+ .   ++-   -+####-        +#########    Coffee: Black, no sugar</span>
-    <span data-ty>#######++     +++++#####.          #########    CPU: Multi-threaded, but still bottlenecked by meetings</span>
-    <span data-ty>#######++     ---+###               ########    Memory: ∞ (with occasional leaks)</span>
-    <span data-ty>#######+       -++.                   ######    </span>
-    <span data-ty>###+-                                    ###    </span>
+<div id="animated-terminal" class="termynal show-content" data-ty-startDelay="100" data-ty-typeDelay="110" data-termynal>
+    <span data-ty="input" data-ty-delay="500" data-ty-prompt="~/piotr/kusinski.dev/about >"> whoami</span>
+    <span data-ty data-ty-delay="100">Fetching data...</span>
+    <span data-ty="progress" data-ty-progressLength="50"></span>
+    <span data-ty data-ty-delay="100"></span>
+    <span data-ty data-ty-delay="30">##############+-++++########################</span>
+    <span data-ty data-ty-delay="30">###########---.--+-. ...####################</span>
+    <span data-ty data-ty-delay="30">##########-.-----...    .-##################    piotr@kusinski.dev</span>
+    <span data-ty data-ty-delay="30">#########-...-..-----+++ ..#################    -------------------------------</span>
+    <span data-ty data-ty-delay="30">#########..-.-------####+. -################    OS: Arch btw</span>
+    <span data-ty data-ty-delay="30">#########. ---+++#######+. -################    Host: Kubernetes Cluster</span>
+    <span data-ty data-ty-delay="30">######### -+  .###+. -+##- .################    Kernel: Hardened (until I forget an update)</span>
+    <span data-ty data-ty-delay="30">######### -+-.. +#-..-+##+ -################    Uptime: <span id="sinceBirth"></span></span>
+    <span data-ty data-ty-delay="30">######### ++--+-###+++###+ +################    Packages: ∞ (pods)</span>
+    <span data-ty data-ty-delay="30">########+.++##++#########++#-###############    Shell: bash/zsh</span>
+    <span data-ty data-ty-delay="30">#########.-+++- .+##########################    SLA: 99.99999% (occasional naps)</span>
+    <span data-ty data-ty-delay="30">#########+-+++-.--#######++#################    Status: Permanently online</span>
+    <span data-ty data-ty-delay="30">##########+--+++++######+     +#############    On-Call Status: PagerDuty PTSD enabled</span>
+    <span data-ty data-ty-delay="30">###########+++########+-#        .##########    Logs: Filtered 10 million lines, still no clue</span>
+    <span data-ty data-ty-delay="30">######### .  +....-.. -##         ##########    Monitoring: Prometheus, Grafana & occasional panic</span>
+    <span data-ty data-ty-delay="30">#######+ .   ++-   -+####-        +#########    Coffee: Black, no sugar</span>
+    <span data-ty data-ty-delay="30">#######++     +++++#####.          #########    CPU: Multi-threaded, but bottlenecked by meetings</span>
+    <span data-ty data-ty-delay="30">#######++     ---+###               ########    Memory: ∞ (with occasional leaks)</span>
+    <span data-ty data-ty-delay="30">#######+       -++.                   ######    </span>
+    <span data-ty data-ty-delay="30">###+-                                    ###    </span>
+    <span data-ty data-ty-delay="100"></span>
+    <span data-ty="input" data-ty-delay="3600000" data-ty-prompt="~/piotr/kusinski.dev/about >"></span>
 </div>
 
-
-
-
 <pre id="static-terminal" class="neofetch hide-content">
-> neofetch
-
+> whoami
 
 ##############+-++++########################
 ###########---.--+-. ...####################    

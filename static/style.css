@@ -5,8 +5,8 @@
 }
 
 div .termynal {
-  overflow: scroll;
   width: 100%;  /* ensure that it fills the container */
+  max-height: 50vh;
 }
 
 .termynal span {
