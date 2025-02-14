@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.Language }}">
+<head>
+  {{ block "title" . }}
+    <title>{{ if .IsHome }}{{ $.Site.Title }}{{ else }}{{ .Title }} :: {{ $.Site.Title }}{{ end }}</title>
+  {{ end }}
+  {{ partial "head.html" . }}
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      /*overflow: hidden;*/  /* if this is uncommented then scrolling breaks lmao */
+      position: relative;
+    }
+    #particles-js {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+      color: white;
+    }
+  </style>
+<!-- include the termynal stylesheet -->
+<link rel="stylesheet" href="{{ "/css/termynal.css" | relURL }}">
+</head>
+<body>
+
+<div id="particles-js"></div>
+{{ $container := cond ($.Site.Params.FullWidthTheme | default false) "container full" (cond ($.Site.Params.CenterTheme | default false) "container center" "container") }}
+
+<div class="{{- $container -}}{{- cond ($.Site.Params.oneHeadingSize | default false) " headings--one-size" "" }}">
+
+  {{ partial "header.html" . }}
+
+  <div class="content">
+    {{ block "main" . }}
+    {{ end }}
+  </div>
+
+  {{ block "footer" . }}
+    {{ partial "footer.html" . }}
+  {{ end }}
+</div>
+
+<!-- include and initialise termynal.js -->
+<script src="{{ "/js/termynal.js" | relURL }}"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Termynal(".termynal", {
+      delay: 75,  
+      lineDelay: 400  
+    });
+  });
+</script>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@1.37.1/tsparticles.min.js"></script>
+<script>
+  tsParticles.load("particles-js", {
+    particles: {
+      number: {
+        value: 60,
+        density: {
+          enable: true,
+          value_area: 700
+        }
+      },
+      color: {
+        value: "#519F50"  /* Color for particles */
+      },
+      shape: {
+        type: "circle",  /* Shape of particles */
+        stroke: {
+          width: 0,
+          color: "#000"
+        }
+      },
+      opacity: {
+        value: 0.2,
+        random: true,
+        anim: {
+          enable: true,
+          speed: 1,
+          opacity_min: 0.1,
+          sync: false
+        }
+      },
+      size: {
+        value: 2,
+        random: true,
+        anim: {
+          enable: false,
+          speed: 40,
+          size_min: 0.5,
+          sync: false
+        }
+      },
+      line_linked: {
+        enable: true,
+        distance: 250,
+        color: "#83D182",  /* Line color */
+        opacity: 0.1,
+        width: 1
+      },
+      move: {
+        enable: true,
+        speed: 1,
+        direction: "none",
+        random: true,
+        straight: false,
+        out_mode: "out",
+        bounce: false
+      }
+    },
+    interactivity: {
+      detect_on: "window",
+      events: {
+        onhover: {
+          enable: true,
+          mode: "grab"
+        },
+        onclick: {
+          enable: true,
+          mode: "push"
+        }
+      },
+      modes: {
+        grab: {
+          distance: 150
+        },
+        push: {
+          particles_nb: 1
+        }
+      }
+    },
+    retina_detect: true
+  });
+</script>
+
+</html>

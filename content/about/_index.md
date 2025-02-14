@@ -3,19 +3,33 @@ title = "whoami"
 +++
 
 
-<link rel="stylesheet" href="termynal.css">
-<script src="termynal.js"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    new Termynal(document.querySelector(".termynal"));
-  });
-</script>
-
-<div class="termynal" data-termynal>
-  <span data-ty="input">echo "Hello, World!"</span>
-  <span data-ty>Output: Hello, World!</span>
-  <!-- Add more command and output pairs as needed -->
+<div class="termynal" data-ty-startDelay="100" data-termynal>
+    <span data-ty="input" data-ty-prompt="~/piotr >"> whoami</span>
+    <span data-ty data-ty-delay="50">Fetching data...</span>
+    <span data-ty="progress"></span>
+    <span data-ty>##############+-++++########################</span>
+    <span data-ty>###########---.--+-. ...####################</span>
+    <span data-ty>##########-.-----...    .-##################    piotr@kusinski.dev</span>
+    <span data-ty>#########-...-..-----+++ ..#################    -------------------------------</span>
+    <span data-ty>#########..-.-------####+. -################    OS: Arch btw</span>
+    <span data-ty>#########. ---+++#######+. -################    Host: Kubernetes Cluster</span>
+    <span data-ty>######### -+  .###+. -+##- .################    Kernel: Hardened (until I forget an update)</span>
+    <span data-ty>######### -+-.. +#-..-+##+ -################    Uptime: <span id="sinceBirth"></span></span>
+    <span data-ty>######### ++--+-###+++###+ +################    Packages: ∞ (pods)</span>
+    <span data-ty>########+.++##++#########++#-###############    Shell: bash/zsh</span>
+    <span data-ty>#########.-+++- .+##########################    SLA: 99.99999% (occasional naps)</span>
+    <span data-ty>#########+-+++-.--#######++#################    Status: Permanently online</span>
+    <span data-ty>##########+--+++++######+     +#############    On-Call Status: PagerDuty PTSD enabled</span>
+    <span data-ty>###########+++########+-#        .##########    Logs: Filtered 10 million lines, still no clue</span>
+    <span data-ty>######### .  +....-.. -##         ##########    Monitoring: Prometheus, Grafana & occasional panic</span>
+    <span data-ty>#######+ .   ++-   -+####-        +#########    Coffee: Black, no sugar</span>
+    <span data-ty>#######++     +++++#####.          #########    CPU: Multi-threaded, but still bottlenecked by meetings</span>
+    <span data-ty>#######++     ---+###               ########    Memory: ∞ (with occasional leaks)</span>
+    <span data-ty>#######+       -++.                   ######    </span>
+    <span data-ty>###+-                                    ###    </span>
 </div>
+
+
 
 
 <pre class="neofetch">
