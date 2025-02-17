@@ -17,31 +17,31 @@ title = "contact"
     <span data-ty data-ty-delay="10"></span>
     <span data-ty data-ty-delay="0">Connecting to kusinski.dev...</span>
     <span data-ty="progress" data-ty-progressChar="." data-ty-progressLength="8"></span>
-    <span data-ty data-ty-delay="200"></span>
-    <span data-ty data-ty-delay="30"><b>Welcome to AlphaCTI [Contact Terminal Interface]</b></span>
+    <span data-ty data-ty-delay="50"></span>
+    <span data-ty data-ty-delay="0"><b>Welcome to AlphaCTI [Contact Terminal Interface]</b></span>
     <span data-ty>Type 'help' to see available commands</span>
-    <span data-ty data-ty-delay="10"></span>
-    <span data-ty="input" data-ty-delay="700" data-ty-typeDelay="80" data-ty-prompt="$">help</span>
+    <span data-ty data-ty-delay="100"></span>
+    <span data-ty="input" data-ty-delay="900" data-ty-typeDelay="80" data-ty-prompt="$">help</span>
     <span data-ty data-ty-delay="10"></span>
     <span data-ty data-ty-delay="10"><b>Available commands:</b></span>
     <span data-ty data-ty-delay="0">- email      -> Show contact email</span>
     <span data-ty data-ty-delay="0">- social     -> Show social links</span>
     <span data-ty data-ty-delay="0">- exit       -> Disconnect</span>
     <span data-ty data-ty-delay="0"><i>More commands soon!</i></span>
+    <span data-ty data-ty-delay="200"></span>
+    <span data-ty="input" data-ty-delay="900" data-ty-typeDelay="90" data-ty-prompt="$">email</span>
     <span data-ty data-ty-delay="0"></span>
-    <span data-ty="input" data-ty-delay="700" data-ty-typeDelay="80" data-ty-prompt="$">email</span>
+    <span data-ty data-ty-delay="50"><b>- <a href="mailto:piotr@kusinski.dev?subject=Hello!&body=Sup?">piotr@kusinski.dev</a></b></span>
+    <span data-ty data-ty-delay="180"></span>
+    <span data-ty="input" data-ty-delay="900" data-ty-typeDelay="80" data-ty-prompt="$">social</span>
     <span data-ty data-ty-delay="0"></span>
-    <span data-ty data-ty-delay="10"><b>- <a href="mailto:piotr@kusinski.dev?subject=Hello!&body=Sup?">piotr@kusinski.dev</a></b></span>
-    <span data-ty data-ty-delay="0"></span>
-    <span data-ty="input" data-ty-delay="700" data-ty-typeDelay="80" data-ty-prompt="$">social</span>
-    <span data-ty data-ty-delay="0"></span>
-    <span data-ty data-ty-delay="10"><b>- Github:</b> <a href="https://github.com/Kosiare" target="_blank">Kosiare</a></span>
-    <span data-ty data-ty-delay="0"><b>- LinkedIn:</b> <a href="https://www.linkedin.com/in/pkusinski/" target="_blank">Piotr Kusinski</a></span>
-    <span data-ty data-ty-delay="0"><b>- Website:</b> <a href="https://kusinski.dev" target="_blank">kusinski.dev</a> - but you're already here</span>
+    <span data-ty data-ty-delay="50"><b>- Github:</b> <a href="https://github.com/Kosiare" target="_blank">Kosiare</a></span>
+    <span data-ty data-ty-delay="10"><b>- LinkedIn:</b> <a href="https://www.linkedin.com/in/pkusinski/" target="_blank">Piotr Kusinski</a></span>
+    <span data-ty data-ty-delay="10"><b>- Website:</b> <a href="https://kusinski.dev" target="_blank">kusinski.dev</a> - but you're already here</span>
     <span data-ty data-ty-delay="100"></span>
-    <span data-ty="input" data-ty-delay="300" data-ty-typeDelay="80" data-ty-prompt="$">exit</span>
-    <span data-ty data-ty-delay="10">Connection closed.</span>
-    <span data-ty data-ty-delay="0"></span>
+    <span data-ty="input" data-ty-delay="400" data-ty-typeDelay="90" data-ty-prompt="$">exit</span>
+    <span data-ty data-ty-delay="100"></span>
+    <span data-ty data-ty-delay="130">Connection closed.</span>
 </div>
 
 <pre id="static-terminal" class="neofetch hide-content">
