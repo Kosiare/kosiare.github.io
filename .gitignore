@@ -30,3 +30,6 @@ go.work.sum
 
 # public (for now)
 public/
+
+# post drafts
+lorem-ipsum/
