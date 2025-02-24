@@ -41,7 +41,7 @@ Furthermore I'm finally looking to do some real coding - If I code something I c
 ---
 # ☕️ Support Me
 
-~~If you find my work helpful, please consider buying me a [coffee](https://letmegooglethat.com/?q=local+charity+near+me) ☕️~~ \
+~~If you find my work helpful, please consider buying me a <a href="https://letmegooglethat.com/?q=local+charity+near+me" target="_blank">coffee</a>~~ ☕️ \
 Actually, no. I do this for free.
 
 ---
