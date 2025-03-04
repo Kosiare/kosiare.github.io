@@ -15,3 +15,7 @@ div .termynal {
   white-space: pre;
   line-height: 120%;
 }
+
+.footer__inner {
+  width: 1100px;
+}
