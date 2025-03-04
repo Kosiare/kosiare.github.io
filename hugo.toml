@@ -115,6 +115,12 @@ theme = "terminal"
           name = "contact"
           url = "/contact"
           weight = 50
+        [[languages.en.menu.main]]
+          identifier = "rss"
+          name = "rss"
+          url = "/posts/index.xml"
+          weight = 60
+
 
 # this unsanitizes the html code within markdown files
 [markup]
