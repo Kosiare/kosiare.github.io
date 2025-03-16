@@ -32,7 +32,7 @@ Furthermore I'm finally looking to do some real coding - If I code something I c
 ## Hobbies
 
 ---
-- **Longboard** - I always wanted to learn downhill, carving long slides that leave only marks and sparks behind me. I do some cruising tho - but still struggling land an ollie...
+- **Longboard** - I always wanted to learn downhill, carving long slides that leave only marks and sparks behind me. I do some cruising tho - but still struggling to land an ollie...
 - **Astronomy** - in theoretical way but maybe someday I'll buy a telescope!
 - **Barista-hobbyist** - I can make you a splendid cuppa coffee.
 - **Information Technology** - duh, of course! Besides my professional skills, I enjoy learning about almost everything related to IT - from cybersecurity and hardware to software architecture. Also, I have a deep appreciation for Holy-C. 🙏
