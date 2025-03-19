@@ -3,8 +3,11 @@ title = "How to dynamically update pod label from the pod itself"
 date = "2025-03-16"
 tags = ["kubernetes", "kubernetes-api", "rbac"]
 slug = "dynamically-update-pod-label-from-the-pod-itself"
-summary = "In this post, I explain how I assigned unique labels to pods in a StatefulSet based on values known only to the init-container. I used the Downward API to expose pod metadata, but instead of using it directly, I leveraged curl and the Kubernetes API to add labels. This required setting up RBAC, a new ServiceAccount, and a RoleBinding to grant the necessary permissions."
+#cover = "/images/dynamically-update-pod-label/cover.jpg"
+summary = "In this post, I explain how I assigned unique labels to pods in a StatefulSet based on values known only to the init-container. I used the Downward API to expose pod metadata, but instead of using it directly with kubectl, I leveraged curl and the Kubernetes API to add labels. This required setting up RBAC, a new ServiceAccount, and a RoleBinding to grant the necessary permissions."
 +++
+
+![k8s-labels](/images/dynamically-update-pod-label/1.jpg "Source: https://cast.ai/blog/kubernetes-labels-expert-guide-with-10-best-practices/")
 
 ---
 ## Intro
@@ -78,10 +81,10 @@ curl -ik \
   https://kubernetes.default.svc.cluster.local/api/v1/namespaces/my-namespace/pods/cool-statefulset-0
 ```
 
-#### *Eureka? Kinda.*
-Solution above won't work. This call to **Kubernetes API** will fail due to a lack of permissions. The default **service account token** is not enough, it doesn't have any permissions to alter anything on the cluster. To make it work I need to apply proper **[RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)** (*role-based access control*), of course using least-privilege approach:
+**Eureka? Kinda.**
+<br>Solution above won't work. This call to **Kubernetes API** will fail due to a lack of permissions. The default **service account token** is not enough, it doesn't have any permissions to alter anything on the cluster. To make it work I need to apply proper <a href=https://kubernetes.io/docs/reference/access-authn-authz/rbac/ target="_blank">**RBAC**</a> (*role-based access control*), of course using least-privilege approach:
 
-#### 1. Role
+### 1. Role
 
 Firstly I have to create a proper **Role** that will have privilege to add a label to a pod within its **namespace**.
 
@@ -97,7 +100,7 @@ rules:
     verbs: ['get', 'patch', 'list']   # indicates what operations are allowed
 ```
 
-#### 2. A (*preferably new*) ServiceAccount
+### 2. A (*preferably new*) ServiceAccount
 
 Then I have to create a new **ServiceAccount** that will use the **Role** from above.
 
@@ -109,7 +112,7 @@ metadata:
   namespace: cool-namespace
 ```
 
-#### 3. RoleBinding
+### 3. RoleBinding
 
 And the last resource I need is a **RoleBinding**. As the name suggests - it'll bind a **Role** to **ServiceAccount**.
 
@@ -130,7 +133,7 @@ roleRef:
 ```
 
 
-#### 4. Edit the StatefulSet
+### 4. Edit the StatefulSet
 
 Since this is new **ServiceAccount**, I need to instruct **StatefulSet** to use it instead of default one.
 
@@ -160,7 +163,7 @@ spec:
                 fieldPath: metadata.namespace
 ```
 
-#### 5. Use env vars in API call
+### 5. Use env vars in API call
 
 And finally I replaced `my-namespace` and `cool-statefulset-0` with proper variables inside `entrypoint.sh`.
 <br>Of course I did it for label key and value as well but that depends on what you need to put in, mine source of label was a file inside **S3 bucket** in `key=value` format, which I properly evaluated earlier in `entrypoint.sh` of **init-container**.
@@ -174,3 +177,23 @@ curl -ik \
   -d '{"metadata":{"labels":{"$LABEL_KEY":"$LABEL_VALUE"}}}' \
   https://kubernetes.default.svc.cluster.local/api/v1/namespaces/${MY_POD_NAMESPACE}/pods/${MY_POD_NAME}
 ```
+
+## Summary
+
+1. Through this whole process I learned more about <a href="https://kubernetes.io/docs/concepts/workloads/pods/downward-api/" target="_blank">**Downward API**</a> (to be honest I had known about it for a long time but I didn't know it had name) and how it is great way to expose **pod** metadata without any additional hassle. 
+2. Relying on `kubectl` inside containers comes with additional overhead and maintenance and it is better to just use **Kubernetes API**, especially for simple tasks like adding a label.
+3. By using <a href=https://kubernetes.io/docs/reference/access-authn-authz/rbac/ target="_blank">**RBAC**</a> I ensured a secure, least-privilege method for patching **pod** metadata.
+4. This solution eliminated the need for additional dependencies while keeping the container image lightweight.
+5. Overall, this approach improved automation, security and maintainability - key principles when working with **Kubernetes**.
+
+
+<h3>Stay tuned for more posts in future!</h3>
+
+
+## Meme of the post
+<details>
+  <summary>Click me to reveal</summary>
+
+![meme](/images/dynamically-update-pod-label/meme.jpg "Source: i don't remember")
+
+</details>
